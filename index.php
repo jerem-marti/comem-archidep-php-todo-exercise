@@ -77,7 +77,7 @@ if (isset($_POST['action'])) {
 /**
  * Select all tasks from the database.
  */
-$selectQuery = 'SELECT * FROM `todo`'; // Add by Jérémy
+$selectQuery = 'SELECT * FROM `todo`ORDER BY done, created_at'; // Add by Jérémy
 $items = $db->query($selectQuery);
 ?>
 
